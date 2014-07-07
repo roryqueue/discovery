@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  root to: 'landing#main'
-  resources :spacescape, only: :index
+  resources :landings, only: :index
+  resources :spacescapes, only: [:index, :new, :create]
+  root to: 'landings#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

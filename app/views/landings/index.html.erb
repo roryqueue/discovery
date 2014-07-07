@@ -1,0 +1,9 @@
+<%= video_tag("planet-earth.webm", id: "background-vid", autoplay: true, muted: true) %>
+
+<div id="landing-header" class="fade-in">
+  <h1 id="landing-title" class="left">Discovery</h1>
+  <ol id="landing-links" class="right">
+    <li><%= link_to "Contribute", new_spacescape_path, id: "spacescapes-create" %></li><br>
+    <li><%= link_to "Explore", spacescapes_path, id: "spacescapes-link" %></li>
+  </ol>
+</div>

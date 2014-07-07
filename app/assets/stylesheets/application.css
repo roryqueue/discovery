@@ -13,3 +13,41 @@
  *= require_tree .
  *= require_self
  */
+video#background-vid {
+position: fixed; right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto; z-index: -100;
+background: url(/assets/images/earth_from_space_background.jpg) no-repeat;
+background-size: cover;
+}
+
+body {
+  background-color: black;
+}
+
+#landing-header {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#landing-title {
+  float: left;
+  font-size: 72pt;
+  margin-left: 5%;
+}
+
+#landing-links {
+  float: right;
+  font-size: 36pt;
+  margin-right: 5%;
+}
+
+#landing-links > li {
+  list-style: none;
+  text-align: right;
+}
+
+#landing-links > li > a {
+  color: white;
+  text-decoration: none;
+}
