@@ -51,3 +51,7 @@ body {
   color: white;
   text-decoration: none;
 }
+
+#landing-links > li > a:hover{
+text-shadow: 2px 2px #7A82DE;
+}
