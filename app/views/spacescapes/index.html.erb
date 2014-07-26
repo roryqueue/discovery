@@ -1,0 +1,22 @@
+<% @spacescapes.each do |spacescape| %>
+  <div class="spacescape" data-type="background" style="background-image: url(<%= spacescape.picture %>);">
+    <article class="space-article">
+      <h1><%= spacescape.title %></h1>
+      <p><%= spacescape.description %></p>
+    </article>
+  </div>
+<% end %>
+
+<script>
+  $(document).ready(function(){
+    $('div[data-type="parallax"]').each(function(){
+      var $spacescape = $(this);
+
+      $(window).scroll(function() {
+          var yPos = -($window.scrollTop() / $spacescape.data('speed'));
+          var coords = '50% '+ yPos + 'px';
+          $spacescape.css({ backgroundPosition: coords });
+      });
+    });
+  });
+</script>

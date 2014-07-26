@@ -1,0 +1,14 @@
+<h1>Submit your astronomical picture!</h1><br>
+
+<%= simple_form_for @spacescape do |f| %>
+
+  <%= f.input :title, autofocus: true, required: true, label: "Title"  %><br>
+
+  <%= f.f.text_field :description, size: 150 label: "Description" %><br>
+
+  <%= f.label :picture %>
+  <%= f.file_field :picture %>
+
+  <%= f.button :submit %><br>
+
+<% end %>
